@@ -70,6 +70,7 @@ Your generated dataset represents what the data SHOULD have been.
 ### Why SVM Is the Best Performing Model
 
 SVM achieved 97.96% because:
+
 - The RBF kernel captures non-linear boundaries in the feature space
 - `C=10` enforces strict classification with minimal misclassification
 - StandardScaler normalization ensures all features contribute equally

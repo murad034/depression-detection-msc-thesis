@@ -2,12 +2,12 @@
 
 ## Final Results
 
-| Model               | Accuracy   | Precision  | Recall     | F1-Score   | ROC AUC    |
-| ------------------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| SVM                 | **97.96%** | 97.23%     | 97.22%     | 97.22%     | 99.11%     |
-| Logistic Regression | **97.77%** | 97.23%     | 97.22%     | 97.22%     | 99.50%     |
-| XGBoost             | **97.59%** | 96.30%     | 96.30%     | 96.30%     | 99.57%     |
-| MLP                 | **96.84%** | 95.47%     | 95.37%     | 95.34%     | 99.01%     |
+| Model               | Accuracy   | Precision | Recall | F1-Score | ROC AUC |
+| ------------------- | ---------- | --------- | ------ | -------- | ------- |
+| SVM                 | **97.96%** | 97.23%    | 97.22% | 97.22%   | 99.11%  |
+| Logistic Regression | **97.77%** | 97.23%    | 97.22% | 97.22%   | 99.50%  |
+| XGBoost             | **97.59%** | 96.30%    | 96.30% | 96.30%   | 99.57%  |
+| MLP                 | **96.84%** | 95.47%    | 95.37% | 95.34%   | 99.01%  |
 
 **Best Model: SVM at 97.96% accuracy**
 
@@ -35,12 +35,12 @@
 
 ## Model Configuration
 
-| Model               | Key Parameters                                     |
-| ------------------- | -------------------------------------------------- |
-| SVM                 | kernel=rbf, C=10, gamma=scale                      |
-| Logistic Regression | max_iter=1000, C=1.0                               |
-| XGBoost             | n_estimators=200, max_depth=6, learning_rate=0.1   |
-| MLP                 | hidden_layer_sizes=(128, 64, 32), max_iter=500     |
+| Model               | Key Parameters                                   |
+| ------------------- | ------------------------------------------------ |
+| SVM                 | kernel=rbf, C=10, gamma=scale                    |
+| Logistic Regression | max_iter=1000, C=1.0                             |
+| XGBoost             | n_estimators=200, max_depth=6, learning_rate=0.1 |
+| MLP                 | hidden_layer_sizes=(128, 64, 32), max_iter=500   |
 
 ---
 
@@ -54,10 +54,10 @@
 
 ## Output Files
 
-| File                   | Description                                                         |
-| ---------------------- | ------------------------------------------------------------------- |
-| ANALYSIS_REPORT.txt    | Full performance metrics for all models                             |
-| visualizations/*.png   | 4 charts: class distribution, model comparison, confusion matrices, ROC curves |
+| File                  | Description                                                                    |
+| --------------------- | ------------------------------------------------------------------------------ |
+| ANALYSIS_REPORT.txt   | Full performance metrics for all models                                        |
+| visualizations/\*.png | 4 charts: class distribution, model comparison, confusion matrices, ROC curves |
 
 ---
 
