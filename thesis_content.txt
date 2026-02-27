@@ -1,0 +1,562 @@
+1 
+          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Abstract -Stress is one of the biggest problems in today's 
+fast-paced society, and because people's lifestyles change 
+so quickly, it frequently results in depression. It can be 
+challenging to diagnose depression, especially when its 
+symptoms coexist with those of ot her medical condition 
+Investigating personality -based characteristics that 
+contribute to student depression was the aim of this study . 
+A systematic survey was used to gather a dataset 
+containing 539 cases and 23 different attributes. By 
+examining this data set, we created a system that can 
+detect possible reasons for depression. To ascertain the 
+prevalence of depression among students, four machine 
+learning techniques were used: Support Vector Machine 
+(SVM), XGBoost, Logistic Regression, and Multilayer 
+Perce ptron (MLP). Several indicators were used to 
+evaluate performance, and 10 -fold cross -validation was 
+used to guarantee the accuracy of the findings.  Our 
+analysis proved that the created models were accurate 
+and succes sful in forecasting depression. XGBoost  
+(92.25%), Multilayer Perceptron (91.10%), Logistic 
+Regression (90.50%), and Support Vector Machine 
+(92.80%) all had the highest accuracy.  Through the use 
+of machine learning and human behavior  analysis 
+methodologies, this study seeks to shed light on the  
+incidence of depression in student populations.  
+     Keywords: Support Vector Machine Algorithm, XG  
+Boost Algorithm, Multilayer Perceptron (MLP), Data 
+Mining, Depression, and Logistic Regression Algorithm . 
+ 
+I.  INTRODUCTION  
+Depression is a condition that can appear in a variety of ways. 
+Depression is a disorder that is dynamic and can appear for a 
+variety of reasons and under various circumstances. Brain 
+injuries and extreme mental stress can be caused by 
+depression. According to WHO estimates, depression impacts 
+about 300 million people globally. [2] To determine the root 
+cause of depression in people, we apply data mining 
+approaches. Over the past 20 years, data mining techniques 
+have been used more and more in a variety of fields [3]. One 
+of the most imp ortant processes for finding and displaying 
+large volumes of data is data mining. It offers a path to 
+information discovery as well. Data mining uses automatic 
+learning algorithms to identify, extract, and learn valuable 
+information from massive databases [4]. Over the past ten 
+years, medical research has found success with the use of data 
+mining tools, especially in the fields of biomedicine and 
+neuroscience. Recently, psychiatry has begun to take 
+advantage of these methods' benefits in order to better 
+understand how mental illness is inherited [5]. Real -time data 
+was gathered from several participants in this study, and 
+various data mining techniques were used to determine  
+activities .  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+II. RELATED  WORKS  
+This study presents a fuzzy logic method for flood 
+detection to promptly notify customers of the possibility 
+of flooding. Examining the relationship between water 
+level and climate status and assessing the significant 
+contribution of the fuzzy logic expert  system to flood 
+warning system prediction are the main objectives of this 
+work [6]. According to these paper publishers, the rates  
+of suicide attempts in the entire group were 9.6%, and the 
+degree of depression was the most powerful predictor of 
+suicide a ttempts. Compared to the non -depressive group, 
+the suicide attempt rates were 2.8 and 5.4 times higher in 
+the depressed and prospective depressed groups, 
+respectively [7]. The analysis of emotions related to 
+depression is done using Natural Language Proces sing 
+(NLP). A support vector  machine and a Naive Bayes 
+classifier were employed by them in their attempt to 
+predict class. They used Twitter to get information. 
+Additionally, the findings were presented using the  key 
+categorization  criteria,  such as confus ion and F1-score, 
+matrix, and precision [8]. A paper was produced that 
+analyzed social media data and utilized a random forest 
+algorithm and two machine learning methods. One 
+algorithm will identify subjects who are depressed, and 
+another algorithm will aid in ide ntifying individuals who 
+are not depressed. Their conclusion was that the dual 
+model is more beneficial than the one[9]. Additionally, a 
+researcher used Twitter data to make predictions in a 
+paper published by a publisher, and they also compared 
+the outcom e with other publications [10].  
+ 
+ 
+III. METHODOLOGY  
+ 
+Although depression analysis has not seen many 
+comparative investigations, it is currently being 
+categorized. Our efforts are guided by these works. This 
+section provides a brief overview of techniques and how 
+they use effective tools and algorithms. A survey has been 
+conducted to gather information for research purposes 
+from students at various Bangladeshi universities. We 
+have mentioned 23 attributes that were gathered and used 
+in this study, and the d ataset comprises 539 occurrences. 
+Several approaches have been used in this investigation. 
+We have extracted information from vast amounts of data 
+via data mining. The strategies are as follows:  
+ Information Gathering  
+  Preprocessing  of  Data  
+ Algorithmic Imp lementation  
+ Simulation  Environment  
+ 
+ 
+AN EFFECTIVE METHOD BASED ON 
+HUMAN DAILY ACTIVITIES TO 
+DETERMINE THE RATE OF DEPRESSION  
+ 
+Rahat  Ahmed,  Dr. Mrinal  Kanti  Baowaly  
+Department of Computer Science & Engineering,   
+Gopalganj Science and Technology University, Gopalganj.  
+Emails:  rahat16379@gmail.com , mkbaowaly@gmail.com . 
+ 
+2 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The flow chart  shown  in Fig. 1 shows  the entire  working  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+              Fig.1: Procedure for System Operation  
+ 
+The flow chart  shown  in Fig. 1 shows  the entire  working 
+process.  
+ 
+A. Information Gathering  
+ 
+    Our questionnaire was created after consulting with many 
+psychiatrists. We gather data from B.Sc., M.Sc., and 
+Undergraduate. Upon receiving the response, we generate our 
+dataset. In the dataset, there are 539 cases. We enumerated 23 
+characteristics that were g athered and applied in this study. In 
+Table I, the features list is displayed.  
+B. Preprocessing of data  
+We have addressed and cleaned the missing data 
+using a variety  of methods,  including  addressing  data 
+discrepancies, smoothing  noisy  data,  and replacing  
+missing values  or rows.  
+Figure  2 depicts  the process  of data preparation.  
+C. Algorithmic Implementation  
+For classification, we employed four different 
+methods. Multilayer Perceptron’s (MLP), Logistic 
+Regression Algorithm, XG boost Algorithm, 
+Support vector Machine Algorithm are these.  
+ 
+1) Multilayer  Perceptron  (MLP):  An example  of a 
+multilayer perceptron (MLP) is the Feed -forward 
+Artificial Neural Network (ANN) class [11]. The 
+term MLP can be used to refer to networks made up 
+of several perceptron layers,  or it can be used 
+broadly to refer to any feed -forward ANN. An input 
+layer, an output layer, and a hidden layer are the 
+three node layers that make up an MLP [11].  
+ 
+ 
+ 
+ TABLEI: Features List  
+ 
+ 
+2) XGBoost Algorithm: An approach for supervised 
+learning called XGBoost predicts a target variable 
+by combining the estimates of simpler models. To 
+accelerate model discovery, XGBoost makes use 
+of distributed and parallel computing, together 
+with a novel tree learning technique. XGBoost 
+uses the weighted quartile sketch algori thm to 
+handle sparse data sets [14]. 
+3)  Logistic Regression Algorithm:  Based on a Feature  Category  Data 
+Distribution  
+Age - Min: 17, Max: 33  
+Gender  Male  66.50%  
+Female  33.50%  
+Do you accept all social norms?  Yes 66.03%  
+No 33.97%  
+What are your thoughts on yourself?  Extrovert  57.15%  
+Introvert  42.85%  
+Do you own a smartphone?  Yes 93.10%  
+No 6.90%  
+Do you enjoy hanging out with friends?  Yes 89.25%  
+Are you content in your current role?  No 10.75%  
+Yes 66.02%  
+ No 33.98%  
+Are you anxious about your work?  Yes 71.23%  
+No 28.77%  
+Do you talk to someone about your problems?  Yes 61.05%  
+Do you find solitude comfortable?  No 38.95%  
+Yes 61.22%  
+No 38.78%  
+Did you attempt suicide?  Yes 14.83%  
+No 85.17%  
+Do you think suicide is the answer to all your 
+problems?  Yes 12.40%  
+No 87.60%  
+Are you  content with your family?  Yes 87.00%  
+No 13.00%  
+Do you feel like a burden to your family?  Yes 38.75%  
+No 61.25%  
+Where are you more at ease?  Family  62.30%  
+Friends  29.85%  
+Others  7.85%  
+Family Size  4 
+Members  36.72%  
+5 
+Members  20.60%  
+6 
+Members  21.76%  
+Other  20.92%  
+Do you engage in extracurricular activities?  Yes 67.52%  
+No 32.48%  
+Do you find your education system 
+challenging?  Yes 67.30%  
+No 32.70%  
+Daily Sleep Duration  6 Hours  18.92%  
+7 Hours  27.80%  
+8 Hours  25.90%  
+Other  27.38%  
+SSC Result  5.00 46.55%  
+4.50 7.40%  
+4.00 5.00%  
+Other  41.05%  
+HSC Result  5.00 21.51%  
+4.50 8.52%  
+4.00 12.42%  
+Other  57.55%  
+University CGPA  4.00 2.21%  
+3.25 2.23%  
+3.00 12.83%  
+Other  82.73%  
+Do you suffer from depression? (Class Label)  Yes 40.62%  
+No 59.38%  
+
+3 
+ collection of input factors, the machine learning 
+method known as logistic regression predicts the 
+likelihood of a binary result using a mathematical 
+technique. In logistic regre ssion, a linear 
+combination of input features is converted into a 
+probability value between 0 and 1 using the 
+logistic function. There are various forms of 
+logistic regression,  such as ordinal, multinomial,  
+and binary,  depending  on the type of dependent 
+variable [ 1]. 
+4) Support Vector Machine Algorithm: A 
+supervised machine learning approach called a 
+support vector machine (SVM) classifies and 
+regresses data us ing statistical learning theory.  
+SVMs maximize the margin between classes in 
+order to identify a hyper plane that divides them in a 
+high-dimensional space. SVMs are frequently used 
+to solve classification issues including image 
+recognition  and text categorization. They  are also 
+useful for o utlier detection and regression [16].  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fig2:  Data  Preparation  Procedure  
+ 
+ 
+D.  Simulation  Environment   
+ Waikato  Environment  for Knowledge  
+Analysis  (WEKA) Version: 3.8.5  
+ IV. EXPERIMENTED  OUTCOMES  AND  ANALYSIS  
+ 
+A.  Accuracy  
+ The accuracy  can be defined  as: 
+ 
+ 
+ 
+ 
+Table II -Experimented  Outcome  
+ 
+Here, TRPV = True Positive, TRNV = True Negative, 
+FLPV=False Positive, FLNV=False Negative, Positive=PV 
+and Negative= NV. 
+ 
+B. Recall, True Positive Rate (TRPVR), or Sensitivity  
+  
+A test's true positive rate, or TP, is the likelihood that 
+individuals with the illness will yield true -positive 
+results [14].  
+ 
+ 
+ 
+ 
+C. Precision  
+ 
+D. F1 -score  
+Additionally, it is recognized by F -Measure, which is defined 
+as [15].  
+ 
+ 
+ 
+ 
+E. Discussions  
+ 
+    Conversations The results of the four methods are 
+displayed in a bar graph in Figure 3. Table II displays the 
+results of the experiment. Are you depressed for class? We 
+employed the Multilayer Perceptron (MLP), Logistic 
+Regression, XGBoost, and Support Vec tor Machine 
+Algorithm (Are you depressed?). Accuracy, TP Rate, FP 
+Rate, Precision, Recall, F -Measure, MCC, Roc Area, and 
+PRC Area were obtained by employing three methodologies. 
+The results obtained by applying the Multilayer Perceptron 
+(MLP) algorithm wer e 94.1 TP Rate, 74.1% FP Rate, 96% 
+Precision, 95% F -Measure, 22.2% MCC, 69.40% ROC Area, Metric  Multilayer 
+Perceptron 
+(MLP)  Logistic 
+Regression  XG 
+Boost  Support 
+Vector 
+Machine 
+(SVM)  
+Accuracy (%)  91.10  90.50  92.25  92.80  
+False Positive 
+Rate  0.988  0.888  0.935  0.985  
+Average 
+Precision (%)  89.50  88.50  90.80  90.90  
+Average Recall 
+(%) 90.90  87.77  92.85  90.20  
+Average F1 -
+Measure (%)  90.40  94.80  89.65  92.90  
+Average ROC 
+Area (%)  69.40  90.61  50.85  91.45  
+Average PRC 
+Area (%)  89.55  50.81  88.25  62.80  
+Confusion 
+Matrix (TP, FP, 
+TN, FN)  [483 20] [30 7]  [500 4] [39 
+0] [499 5] 
+[36 3]  [455 5] [35 
+2] 
+TRPV R  
+TRPV R =
+ 2 × 
+PV 
+ 
+ 
+Accuracy = 
+TRPV + TRNV  
+TRPV + TRNV + FLPV + FLNV  
+TRPV R 
+ 2 × 
+ 
+F1=2 
+x 
+Precision x  Recall  
+Precision +  Recall  
+4 
+ and 89.55 PRC Area. Through the use of the Logistic 
+Regression technique, we were able to obtain 92.8% TP Rate, 
+99.9% FP Rate, 99.2 Precision, 95.9% F -Measure, 49.5% 
+MCC, 90.61% ROC Area, and 50.81 PRC Area. Using the 
+XGBoost method, we obtained a TP rate of 93.2%, FP rate of 
+62.5%, precision of 99%, F -measure of 96%, MCC of 49.8%, 
+ROC area of 50.85%, and PRC area of 88.25%. These results 
+were obtained using the Support  Vector Machine algorithm: 
+92.9% TP Rate, 71.4% FP Rate, 98.9% Precision, 95.8% F -
+Measure, 42.9% MCC, 91.45% ROC Area, and 62.80% PRC 
+Area.  
+ 
+ 
+ 
+ 
+Fig. 3: Bar -chart between MLP, Logistic Regression,  
+XG Boost and Support Vector Machine Algorithm.  
+ 
+V. C ONCLUSION  
+ 
+By examining information obtained from structured 
+surveys, this study sought to determine the causes of 
+depression in college students.  We created predictive 
+models that successfully categorized people 
+according to depressive symptoms and assoc iated 
+behaviors using machine learning techniques. Four 
+methods were used and assessed: Support Vector 
+Machine (SVM), XGBoost, Logistic Regression, and 
+Multilayer Perceptron (MLP).  With 92.80% 
+classification accuracy, the SVM algorithm 
+outperformed the ot hers, closely followed by 
+XGBoost (92.25%), MLP (91.10%), an d Logistic 
+Regression (90.50%).   These findings show that 
+machine learning methods have the potential to be 
+used in the early identification and assessment of 
+depression, which might be crucial for prompt 
+intervention and mental health assistance. 
+Nevertheless, there were restrictions w hen gathering 
+the data.  The lengthy questionnaire was occasionally 
+resisted by participants, which might have affected 
+the caliber of their answers.  Additionally, the sample 
+size was somewhat limited, indicating that future 
+research will require larger d atasets.  In our upcoming 
+efforts, we want to:   
+Increase the size of the dataset by adding more people with 
+a range of backgrounds.  
+Improve prediction performance by implementing deep 
+learning techniques.  
+Sort depression severity into three categories for a  more 
+detailed analysis: severe, medium, and low.  
+Examine other algorithms, such Random Forest and Naive 
+Bayes, as well as sophisticated pre -processing methods to 
+raise the ac curacy and effectiveness of model.  
+ 
+ 
+ 
+ 
+  
+REFERENCES  
+ 
+ 
+[1] N. Mohd and Y. Yahya, “A Data Mining Approach for Prediction 
+ofStudents’ Depression Using Logistic Regression And Artificial 
+NeuralNetwork”, In Proceedings of the 12th International Conference 
+onUbiquitous Information Management and Communication (IMCOM’18) , 
+Association for Computing Machinery, New York, NY, USA,Article 52, pp. 
+15, 2018 DOI:https://doi.org/10.1145/3164541.3164604  
+ 
+[2] “Depression”, Who.int , 2020. [Online]. 
+Available:https://www.who.int/en/news -room/fact -
+sheets/detail/depression.[Accessed: 0 6-Nov-2020].  
+ 
+[3] J.Dipnall,J.Pasco,M.Berk,L.Williams,S.Dodd,F.Jackaand  
+D. Meyer, “Fusing Data Mining, Machine Learning and TraditionalStatistics 
+to Detect Biomarkers Associated with Depression”, PLoSONE , vol. 11, no. 
+2, p. e0148195, 2016.  
+ 
+[4] M.Pirooz nia,F.Seifuddin,J.Judy,P.Mahon,J.PotashandP.Zandi, “Data 
+mining approaches for genome -wide association of mooddisorders”, 
+Psychiatric Genetics , vol. 22, no. 2, pp. 55 -61, 2012.  
+  
+[5] H.Ni,X.Yang,C.Fang,Y.Guo,M.XuandY.He,“Datamining -basedstudy on 
+sub-mental ly healthy state among residents in eight provincesand cities in 
+China”, Journal of Traditional Chinese Medicine , vol. 34,no. 4, pp. 511 -517, 
+2014.  
+ 
+[6] Z. Idris and M. Nazir, “Prediction of Flood Detection System: 
+FuzzyLogic Approach”, International Jour nal of Enhanced Research 
+inScience Technology & Engineering , vol. 3, no. 1, 2014.  
+  
+[7] S. Man Bae and S. A Lee, “Prediction by data mining, of suicideattempts 
+in Korean adolescents: a national study”, Dovepress , 2015.  
+ 
+[8] M. Deshpande and V. Rao , “Depression detection using emotion arti -
+ficial intelligence”, International Conference on Intelligent 
+SustainableSystems (ICISS) , 2017. Available: 10.1109/ISS1.2017.8389299  
+ 
+[9] F. Cacheda, D. Fernandeg and F. J Novoa, “Early Detection of Depres -
+sion: Social Network Analysis and Random Forest Techniques”, JMIR ,vol. 
+21, 2019.  
+  
+[10] 
+K.Shrestha,“MachineLearningforDepressionDiagnosisusingTwitterdata”, 
+International Journal of Computer Engineering in ResearchTrends , vol. 5, 
+no. 2, 2018.  
+ 
+[11] “Multilayer p erceptron”, En.wikipedia.org , 2020. [Online]. Avail -able: 
+https://en.wikipedia.org/wiki/Multilayer perceptron. [Accessed:06 -Nov-
+2020].  
+ 
+[12] F. Jimnez and C. Martnez, “Multi -Objective Evolutionary Rule -
+BasedClassification with Categorical Data”, Entropy , 2018. [Accessed: 06 -
+Nov-2020].  
+ 
+[13] De Melo Gomes Soares, Elaine Anita &Damascena, 
+Lecidamia&deLima, Luciana &Moraes, Ronei, “Analysis of the Fuzzy 
+UnorderedRule Induction Algorithm as a Method for Classification”, 
+QuintoCongressoBrasileiro de Sistemas F uzzy (V CBSF) , pp. 17 -28, 2018.  
+  
+[14] “XGBoostAlgorithm:LongMaySheReign!”, Medium ,2020.[Online]. 
+Available: https://towardsdatascience.com/https -medium -comvishalmorde -
+xgboost -algorithm -long-she-may-rein-edd9f99be63d.[Accessed: 06 -Nov-
+2020].  
+ 
+[15] “Accurac y,Recall,Precision,F -Score&Specificity,whichto optimize 
+on?”, Medium , 2020. [Online]. 
+Available:https://towardsdatascience.com/accuracy -recall -precision -
+fscorespecificity -which -to-optimize -on-867d3f11124. [Accessed:06 - Nov- 
+2020].  
+ 
+[16]  Boser, B. E., Guyon, I. M., & Vapnik, V. (1992). A training algorithm 
+for optimal margin classifiers. Proceedings of the Fifth Annual Workshop on 
+Computational Learning Theory, 144 -152.Schölkopf, B., & Smola, A. J. 
+(2002). Learning with Kernels: Support Vector Machines, Regularization,  
+Optimization, and Beyond. MIT Press . 
+

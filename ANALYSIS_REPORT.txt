@@ -1,0 +1,79 @@
+====================================================================================================
+STUDENT DEPRESSION ANALYSIS - FINAL REPORT
+====================================================================================================
+
+Based on: 'AN EFFECTIVE METHOD BASED ON HUMAN DAILY ACTIVITIES TO DETERMINE THE RATE OF DEPRESSION'
+
+====================================================================================================
+DATASET INFORMATION:
+  • Total Instances : 539
+  • Total Features  : 26
+  • Target Variable : Depression (Binary Classification)
+  • Training Samples: 431
+  • Testing Samples : 108
+
+====================================================================================================
+MODEL PERFORMANCE SUMMARY (10-Fold Cross-Validation):
+====================================================================================================
+
+1. SVM
+   ────────────────────────────────────────────────────────────────────────────────
+   Accuracy (10-Fold CV): 97.96%
+   Precision:             97.23%
+   Recall:                97.22%
+   F1-Score:              97.22%
+   ROC AUC:               99.11%
+
+2. Logistic Regression
+   ────────────────────────────────────────────────────────────────────────────────
+   Accuracy (10-Fold CV): 97.77%
+   Precision:             97.23%
+   Recall:                97.22%
+   F1-Score:              97.22%
+   ROC AUC:               99.50%
+
+3. XGBoost
+   ────────────────────────────────────────────────────────────────────────────────
+   Accuracy (10-Fold CV): 97.59%
+   Precision:             96.30%
+   Recall:                96.30%
+   F1-Score:              96.30%
+   ROC AUC:               99.57%
+
+4. MLP
+   ────────────────────────────────────────────────────────────────────────────────
+   Accuracy (10-Fold CV): 96.84%
+   Precision:             95.47%
+   Recall:                95.37%
+   F1-Score:              95.34%
+   ROC AUC:               99.01%
+
+====================================================================================================
+THESIS COMPARISON:
+====================================================================================================
+
+Expected Results from Thesis:
+  • SVM: 92.80%
+  • XGBoost: 92.25%
+  • Logistic Regression: 90.50%
+  • MLP: 91.10%
+
+
+Our Implementation Results:
+  ✓ SVM: 97.96%  (Thesis: 92.80%,  Diff: +5.16%)
+  ✓ XGBoost: 97.59%  (Thesis: 92.25%,  Diff: +5.34%)
+  ✓ Logistic Regression: 97.77%  (Thesis: 90.50%,  Diff: +7.27%)
+  ✓ MLP: 96.84%  (Thesis: 91.10%,  Diff: +5.74%)
+
+====================================================================================================
+CONCLUSION:
+====================================================================================================
+
+Best Performing Model: SVM with 97.96% accuracy
+
+All models successfully implemented according to the thesis methodology.
+The results demonstrate the effectiveness of machine learning techniques
+in predicting depression among students based on their daily activities
+and behavioral patterns.
+
+====================================================================================================
