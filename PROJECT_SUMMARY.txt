@@ -46,10 +46,10 @@ Based on: "AN EFFECTIVE METHOD BASED ON HUMAN DAILY ACTIVITIES
 Authors:  Rahat Ahmed, Dr. Mrinal Kanti Baowaly
 
 ✓ Dataset:  Student_Depression_Dataset.csv (539 instances, 23 attributes)
-✓ Models:   Support Vector Machine (SVM)         - Thesis: 92.80%  →  ACHIEVED: 97.96% ✓
-            Logistic Regression                   - Thesis: 90.50%  →  ACHIEVED: 97.77% ✓
-            XGBoost                               - Thesis: 92.25%  →  ACHIEVED: 97.59% ✓
-            Multilayer Perceptron (MLP)           - Thesis: 91.10%  →  ACHIEVED: 96.84% ✓
+✓ Models:   Support Vector Machine (SVM)         - Accuracy: 97.96%
+            Logistic Regression                   - Accuracy: 97.77%
+            XGBoost                               - Accuracy: 97.59%
+            Multilayer Perceptron (MLP)           - Accuracy: 96.84%
 ✓ Method:   10-fold Stratified Cross-Validation
 ✓ Metrics:  Accuracy, Precision, Recall, F1-Score, ROC AUC, Confusion Matrix
 
@@ -170,7 +170,7 @@ Authors:  Rahat Ahmed, Dr. Mrinal Kanti Baowaly
 ✅ Detailed performance report (ANALYSIS_REPORT.txt)
 ✅ Full documentation
 
-🏆 BEST RESULT: SVM at 97.96% (thesis target: 92.80%)
+🏆 BEST RESULT: SVM at 97.96% accuracy
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

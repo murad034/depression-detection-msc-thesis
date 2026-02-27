@@ -216,34 +216,25 @@ print("STEP 7: GENERATING VISUALIZATIONS")
 print("=" * 80)
 
 model_names = list(results.keys())
-thesis_targets = {
-    'SVM': 92.80, 'XGBoost': 92.25,
-    'Logistic Regression': 90.50, 'MLP': 91.10
-}
 
-# — Bar chart: CV accuracy vs thesis targets —
-fig, ax = plt.subplots(figsize=(12, 6))
+# — Bar chart: CV accuracy —
+fig, ax = plt.subplots(figsize=(10, 6))
 x = np.arange(len(model_names))
-w = 0.38
 
-bars1 = ax.bar(x - w/2, [thesis_targets[m] for m in model_names], w,
-               label='Thesis Target', color='#4CAF50', edgecolor='black', alpha=0.85)
-bars2 = ax.bar(x + w/2, [results[m]['cv_accuracy'] for m in model_names], w,
-               label='Our Result',    color='#2196F3', edgecolor='black', alpha=0.85)
+bars = ax.bar(x, [results[m]['cv_accuracy'] for m in model_names],
+              0.55, color=['#2196F3','#4CAF50','#FF9800','#9C27B0'],
+              edgecolor='black', alpha=0.88)
 
-for b in bars1:
-    ax.text(b.get_x()+b.get_width()/2, b.get_height()+0.4,
-            f"{b.get_height():.2f}%", ha='center', fontsize=9, fontweight='bold')
-for b in bars2:
-    ax.text(b.get_x()+b.get_width()/2, b.get_height()+0.4,
-            f"{b.get_height():.2f}%", ha='center', fontsize=9, fontweight='bold')
+for b in bars:
+    ax.text(b.get_x()+b.get_width()/2, b.get_height()+0.3,
+            f"{b.get_height():.2f}%", ha='center', fontsize=10, fontweight='bold')
 
 ax.set_xticks(x); ax.set_xticklabels(model_names)
 ax.set_ylim(0, 100)
 ax.set_ylabel('Accuracy (%)', fontsize=12)
-ax.set_title('Model Accuracy – Thesis Target vs Our Implementation',
+ax.set_title('Model Accuracy Comparison (10-Fold Cross-Validation)',
              fontsize=14, fontweight='bold')
-ax.legend(fontsize=11); ax.grid(axis='y', alpha=0.3, linestyle='--')
+ax.grid(axis='y', alpha=0.3, linestyle='--')
 plt.tight_layout()
 plt.savefig('visualizations/model_comparison.png', dpi=200)
 plt.close()
@@ -339,20 +330,7 @@ for rank, (name, res) in enumerate(sorted_res, 1):
     lines.append(f"   ROC AUC:               {res['roc_auc']:.2f}%")
 
 lines.append("\n" + "=" * 100)
-lines.append("THESIS COMPARISON:")
-lines.append("=" * 100)
-lines.append("\nExpected Results from Thesis:")
-for m, t in thesis_targets.items():
-    lines.append(f"  • {m}: {t:.2f}%")
 
-lines.append("\n\nOur Implementation Results:")
-for name, res in results.items():
-    diff = res['cv_accuracy'] - thesis_targets[name]
-    flag = "✓" if res['cv_accuracy'] >= 90 else "⚠"
-    lines.append(f"  {flag} {name}: {res['cv_accuracy']:.2f}%  "
-                 f"(Thesis: {thesis_targets[name]:.2f}%,  Diff: {diff:+.2f}%)")
-
-lines.append("\n" + "=" * 100)
 lines.append("CONCLUSION:")
 lines.append("=" * 100)
 best_name, best_res = sorted_res[0]

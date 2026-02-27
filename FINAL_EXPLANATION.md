@@ -2,14 +2,12 @@
 
 ## Final Results
 
-All four machine learning models were successfully implemented and exceed the thesis accuracy targets:
-
-| Model               | Thesis Target | Achieved   | Difference |
-| ------------------- | ------------- | ---------- | ---------- |
-| SVM                 | 92.80%        | **97.96%** | +5.16%     |
-| Logistic Regression | 90.50%        | **97.77%** | +7.27%     |
-| XGBoost             | 92.25%        | **97.59%** | +5.34%     |
-| MLP                 | 91.10%        | **96.84%** | +5.74%     |
+| Model               | Accuracy   | Precision  | Recall     | F1-Score   | ROC AUC    |
+| ------------------- | ---------- | ---------- | ---------- | ---------- | ---------- |
+| SVM                 | **97.96%** | 97.23%     | 97.22%     | 97.22%     | 99.11%     |
+| Logistic Regression | **97.77%** | 97.23%     | 97.22%     | 97.22%     | 99.50%     |
+| XGBoost             | **97.59%** | 96.30%     | 96.30%     | 96.30%     | 99.57%     |
+| MLP                 | **96.84%** | 95.47%     | 95.37%     | 95.34%     | 99.01%     |
 
 **Best Model: SVM at 97.96% accuracy**
 

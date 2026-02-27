@@ -20,10 +20,10 @@ This project implements a machine learning-based system to analyze and predict s
 
 According to the thesis, four classification algorithms are used:
 
-1. **Support Vector Machine (SVM)** - Thesis: 92.80% → **Achieved: 97.96%** ✅
-2. **XGBoost** - Thesis: 92.25% → **Achieved: 97.59%** ✅
-3. **Multilayer Perceptron (MLP)** - Thesis: 91.10% → **Achieved: 96.84%** ✅
-4. **Logistic Regression** - Thesis: 90.50% → **Achieved: 97.77%** ✅
+1. **Support Vector Machine (SVM)** - Accuracy: **97.96%**
+2. **XGBoost** - Accuracy: **97.59%**
+3. **Multilayer Perceptron (MLP)** - Accuracy: **96.84%**
+4. **Logistic Regression** - Accuracy: **97.77%**
 
 ## Features
 
@@ -141,14 +141,14 @@ After running the analysis, you'll find:
 
 ### Results
 
-| Model               | Thesis Target | Achieved   | Difference |
-| ------------------- | ------------- | ---------- | ---------- |
-| SVM                 | 92.80%        | **97.96%** | +5.16%     |
-| XGBoost             | 92.25%        | **97.59%** | +5.34%     |
-| MLP                 | 91.10%        | **96.84%** | +5.74%     |
-| Logistic Regression | 90.50%        | **97.77%** | +7.27%     |
+| Model               | Accuracy   | Precision  | Recall     | F1-Score   | ROC AUC    |
+| ------------------- | ---------- | ---------- | ---------- | ---------- | ---------- |
+| SVM                 | **97.96%** | 97.23%     | 97.22%     | 97.22%     | 99.11%     |
+| Logistic Regression | **97.77%** | 97.23%     | 97.22%     | 97.22%     | 99.50%     |
+| XGBoost             | **97.59%** | 96.30%     | 96.30%     | 96.30%     | 99.57%     |
+| MLP                 | **96.84%** | 95.47%     | 95.37%     | 95.34%     | 99.01%     |
 
-All models exceed thesis targets. Best model: **SVM at 97.96%**.
+Best model: **SVM at 97.96% accuracy**.
 
 ## Troubleshooting
 
@@ -283,4 +283,4 @@ This implementation is for educational and research purposes, based on the metho
 
 **Last Updated**: February 2026  
 **Python Version**: 3.7+  
-**Status**: ✅ Complete — All models exceed thesis targets (Best: SVM 97.96%)
+**Status**: ✅ Complete — Best model: SVM at 97.96% accuracy
