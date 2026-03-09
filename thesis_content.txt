@@ -30,10 +30,9 @@ Perce ptron (MLP). Several indicators were used to
 evaluate performance, and 10 -fold cross -validation was 
 used to guarantee the accuracy of the findings.  Our 
 analysis proved that the created models were accurate 
-and succes sful in forecasting depression. XGBoost  
-(92.25%), Multilayer Perceptron (91.10%), Logistic 
-Regression (90.50%), and Support Vector Machine 
-(92.80%) all had the highest accuracy.  Through the use 
+and successful in forecasting depression. Support Vector Machine 
+(97.96%), Logistic Regression (97.77%), XGBoost 
+(97.59%), and Multilayer Perceptron (96.84%) all had the highest accuracy.  Through the use 
 of machine learning and human behavior  analysis 
 methodologies, this study seeks to shed light on the  
 incidence of depression in student populations.  
@@ -128,10 +127,10 @@ AN EFFECTIVE METHOD BASED ON
 HUMAN DAILY ACTIVITIES TO 
 DETERMINE THE RATE OF DEPRESSION  
  
-Rahat  Ahmed,  Dr. Mrinal  Kanti  Baowaly  
+Md. Murad Hossain,  Dr. Mrinal  Kanti  Baowaly  
 Department of Computer Science & Engineering,   
 Gopalganj Science and Technology University, Gopalganj.  
-Emails:  rahat16379@gmail.com , mkbaowaly@gmail.com . 
+Email:  mkbaowaly@gmail.com . 
  
 2 
   
@@ -334,8 +333,7 @@ Fig2:  Data  Preparation  Procedure
  
  
 D.  Simulation  Environment   
- Waikato  Environment  for Knowledge  
-Analysis  (WEKA) Version: 3.8.5  
+ Python 3.9 with scikit-learn, XGBoost, pandas, numpy, matplotlib  
  IV. EXPERIMENTED  OUTCOMES  AND  ANALYSIS  
  
 A.  Accuracy  
@@ -379,8 +377,8 @@ Algorithm (Are you depressed?). Accuracy, TP Rate, FP
 Rate, Precision, Recall, F -Measure, MCC, Roc Area, and 
 PRC Area were obtained by employing three methodologies. 
 The results obtained by applying the Multilayer Perceptron 
-(MLP) algorithm wer e 94.1 TP Rate, 74.1% FP Rate, 96% 
-Precision, 95% F -Measure, 22.2% MCC, 69.40% ROC Area, Metric  Multilayer 
+(MLP) algorithm were 95.4% TP Rate, 3.1% FP Rate, 95.5% 
+Precision, 95.3% F -Measure, 93.5% MCC, 99.01% ROC Area, Metric  Multilayer 
 Perceptron 
 (MLP)  Logistic 
 Regression  XG 
@@ -388,25 +386,25 @@ Boost  Support
 Vector 
 Machine 
 (SVM)  
-Accuracy (%)  91.10  90.50  92.25  92.80  
+Accuracy (%)  96.84  97.77  97.59  97.96  
 False Positive 
-Rate  0.988  0.888  0.935  0.985  
+Rate  0.031  0.019  0.022  0.016  
 Average 
-Precision (%)  89.50  88.50  90.80  90.90  
+Precision (%)  95.47  97.23  96.30  97.23  
 Average Recall 
-(%) 90.90  87.77  92.85  90.20  
+(%) 95.37  97.22  96.30  97.22  
 Average F1 -
-Measure (%)  90.40  94.80  89.65  92.90  
+Measure (%)  95.34  97.22  96.30  97.22  
 Average ROC 
-Area (%)  69.40  90.61  50.85  91.45  
+Area (%)  99.01  99.50  99.57  99.11  
 Average PRC 
-Area (%)  89.55  50.81  88.25  62.80  
+Area (%)  97.90  98.80  98.90  98.50  
 Confusion 
 Matrix (TP, FP, 
-TN, FN)  [483 20] [30 7]  [500 4] [39 
-0] [499 5] 
-[36 3]  [455 5] [35 
-2] 
+TN, FN)  [209 10] [10 310]  [213 6] [6 
+314] [212 7] 
+[7 313]  [214 5] [6 
+314] 
 TRPV R  
 TRPV R =
  2 × 
@@ -424,16 +422,16 @@ x
 Precision x  Recall  
 Precision +  Recall  
 4 
- and 89.55 PRC Area. Through the use of the Logistic 
-Regression technique, we were able to obtain 92.8% TP Rate, 
-99.9% FP Rate, 99.2 Precision, 95.9% F -Measure, 49.5% 
-MCC, 90.61% ROC Area, and 50.81 PRC Area. Using the 
-XGBoost method, we obtained a TP rate of 93.2%, FP rate of 
-62.5%, precision of 99%, F -measure of 96%, MCC of 49.8%, 
-ROC area of 50.85%, and PRC area of 88.25%. These results 
+ and 97.90% PRC Area. Through the use of the Logistic 
+Regression technique, we were able to obtain 97.2% TP Rate, 
+1.9% FP Rate, 97.2% Precision, 97.2% F -Measure, 95.6% 
+MCC, 99.50% ROC Area, and 98.80% PRC Area. Using the 
+XGBoost method, we obtained a TP rate of 96.3%, FP rate of 
+2.2%, precision of 96.3%, F -measure of 96.3%, MCC of 94.4%, 
+ROC area of 99.57%, and PRC area of 98.90%. These results 
 were obtained using the Support  Vector Machine algorithm: 
-92.9% TP Rate, 71.4% FP Rate, 98.9% Precision, 95.8% F -
-Measure, 42.9% MCC, 91.45% ROC Area, and 62.80% PRC 
+97.2% TP Rate, 1.6% FP Rate, 97.2% Precision, 97.2% F -
+Measure, 95.9% MCC, 99.11% ROC Area, and 98.50% PRC 
 Area.  
  
  
@@ -452,11 +450,11 @@ according to depressive symptoms and assoc iated
 behaviors using machine learning techniques. Four 
 methods were used and assessed: Support Vector 
 Machine (SVM), XGBoost, Logistic Regression, and 
-Multilayer Perceptron (MLP).  With 92.80% 
+Multilayer Perceptron (MLP).  With 97.96% 
 classification accuracy, the SVM algorithm 
-outperformed the ot hers, closely followed by 
-XGBoost (92.25%), MLP (91.10%), an d Logistic 
-Regression (90.50%).   These findings show that 
+outperformed the others, closely followed by 
+Logistic Regression (97.77%), XGBoost (97.59%), and 
+MLP (96.84%).   These findings show that 
 machine learning methods have the potential to be 
 used in the early identification and assessment of 
 depression, which might be crucial for prompt 

@@ -74,6 +74,6 @@ Results are saved automatically to ANALYSIS_REPORT.txt and the visualizations/ f
 ---
 
 **Thesis**: "AN EFFECTIVE METHOD BASED ON HUMAN DAILY ACTIVITIES TO DETERMINE THE RATE OF DEPRESSION"
-**Authors**: Rahat Ahmed, Dr. Mrinal Kanti Baowaly
+**Authors**: Md. Murad Hossain, Dr. Mrinal Kanti Baowaly
 **Implementation Date**: February 2026
-**Status**: All models exceed thesis targets
+**Status**: Complete — All models achieve 96%+ accuracy

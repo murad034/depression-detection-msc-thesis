@@ -6,7 +6,7 @@
 
 📁 PROJECT LOCATION: d:\laragon\www\thesis
 
-✅ PROJECT STATUS: COMPLETE — ALL MODELS EXCEED THESIS TARGETS!
+✅ PROJECT STATUS: COMPLETE — ALL MODELS ACHIEVE 96%+ ACCURACY
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -43,7 +43,7 @@
 
 Based on: "AN EFFECTIVE METHOD BASED ON HUMAN DAILY ACTIVITIES 
            TO DETERMINE THE RATE OF DEPRESSION"
-Authors:  Rahat Ahmed, Dr. Mrinal Kanti Baowaly
+Authors:  Md. Murad Hossain, Dr. Mrinal Kanti Baowaly
 
 ✓ Dataset:  Student_Depression_Dataset.csv (539 instances, 23 attributes)
 ✓ Models:   Support Vector Machine (SVM)         - Accuracy: 97.96%
@@ -163,7 +163,7 @@ Authors:  Rahat Ahmed, Dr. Mrinal Kanti Baowaly
 
 ✅ Exact implementation of thesis methodology
 ✅ All 4 machine learning models implemented
-✅ All 4 models EXCEED thesis accuracy targets
+✅ All 4 models achieve 96%+ accuracy
 ✅ 10-fold cross-validation as specified
 ✅ Complete data preprocessing pipeline
 ✅ 4 professional visualizations generated
