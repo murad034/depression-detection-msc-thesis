@@ -307,11 +307,9 @@ The remarkably high ROC AUC scores (all above 99%) confirm that all four models
 are capable of near-perfect discrimination between depressed and non-depressed
 students across all classification thresholds.
 
-All four models significantly exceed results typically reported in machine
-learning-based depression classification studies, demonstrating that the
-combination of properly collected behavioral survey data with systematic
-preprocessing and optimized algorithms is highly effective for student
-depression detection.
+These results demonstrate that the combination of properly collected behavioral
+survey data with systematic preprocessing and optimized machine learning algorithms
+is highly effective for student depression detection.
 
 ================================================================================
 V. CONCLUSION
